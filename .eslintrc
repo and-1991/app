@@ -22,5 +22,3 @@
     "linebreak-style": [0, "error", "windows"]
   }
 }
-
-yarn add -D @babel/core @babel/preset-env @babel/preset-react babel-loader @babel/plugin-proposal-class-properties
