@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter} from 'react-router-dom';
 import {renderRoutes} from 'react-router-config';
 import {Provider} from 'react-redux';
+import '@babel/polyfill';
 
 import Route from "./Route";
 import {store} from "./store";
