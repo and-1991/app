@@ -6,16 +6,17 @@ const merge = require('webpack-merge');
 const baseConfig = require('./webpack.config.base');
 
 module.exports = merge(baseConfig, {
-    mode: "development",
+    mode: 'development',
     entry: './src/index.js',
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'public'),
-        publicPath: "/"
+        publicPath: '/'
     },
+
     plugins: [
         new HtmlWebPackPlugin({
-            template: "./index.html"
+            template: './index.html'
         }),
         new webpack.HotModuleReplacementPlugin()
     ],

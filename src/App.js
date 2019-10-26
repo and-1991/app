@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.scss";
-import {renderRoutes} from "react-router-config";
+import { renderRoutes } from "react-router-config";
 
 const App = ({route}) => {
     return(

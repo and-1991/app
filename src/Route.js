@@ -1,6 +1,7 @@
 import Home from './pages/Home';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
+import Todo from './pages/Todo'
 import App from './App'
 
 export default [
@@ -18,9 +19,12 @@ export default [
                 exact: true,
             },
             {
-                component: NotFound,
-                path: '/',
+                component: Todo,
+                path: '/todo',
                 exact: true,
+            },
+            {
+                component: NotFound,
             },
         ]
     }
