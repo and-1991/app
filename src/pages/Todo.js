@@ -24,10 +24,18 @@ const Todo = ({ todos, fetchTodos }) => {
     )
 };
 
+const loadData = (store, param) => {
+    return store.dispatch(fetchTodos(param))
+};
+
 const mapStateToProps = state => ({
     todos: state.todos,
 });
 
 const mapDispatchToProps = {fetchTodos};
 
-export default connect(mapStateToProps, mapDispatchToProps)(Todo);
+export default {component: connect(
+    mapStateToProps, mapDispatchToProps
+    )(Todo),
+    loadData,
+}

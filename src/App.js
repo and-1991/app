@@ -14,4 +14,4 @@ App.defaultProps = {
     route: null,
 };
 
-export default App
+export default { component: App };

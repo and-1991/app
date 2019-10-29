@@ -1,5 +1,5 @@
 module.exports = {
-    target: "web",
+    target: 'web',
     module: {
         rules: [
             {
@@ -10,15 +10,15 @@ module.exports = {
                     options: {
                         presets: [
                             '@babel/preset-react',
-                            ['@babel/env', {targets: {browsers: ['last 7 versions']}}]
+                            ['@babel/env', { targets: { browsers: ['last 7 versions'] } }]
                         ]
                     }
                 }
-            },
-            {
-                test: /\.scss$/,
-                use: ['style-loader', 'css-loader', 'sass-loader']
             }
+            // {
+            //   test: /\.scss$/,
+            //   use: ['style-loader', 'css-loader', 'sass-loader']
+            // }
         ]
-    },
+    }
 };
