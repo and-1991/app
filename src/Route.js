@@ -6,25 +6,23 @@ import App from './App'
 
 export default [
     {
-        component: App,
+        ...App,
         routes: [
             {
-                component: Home,
+                ...Home,
                 path: '/',
                 exact: true,
             },
             {
-                component: About,
+                ...About,
                 path: '/about',
-                exact: true,
             },
             {
-                component: Todo,
+                ...Todo,
                 path: '/todo',
-                exact: true,
             },
             {
-                component: NotFound,
+                ...NotFound,
             },
         ]
     }
